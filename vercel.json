@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "routes": [
+    {
+      "src": "/api/webhook-hotmart",
+      "dest": "/api/webhook-hotmart.ts",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/api/track",
+      "dest": "/api/track.ts",
+      "methods": ["GET", "POST", "OPTIONS"]
+    },
+    {
+      "src": "/api/meta-sync",
+      "dest": "/api/meta-sync.ts",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/api/meta-capi",
+      "dest": "/api/meta-capi.ts",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/dashboard",
+      "dest": "/api/dashboard.ts",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/settings",
+      "dest": "/api/settings.ts",
+      "methods": ["GET", "POST", "PUT"]
+    },
+    {
+      "src": "/api/hotmart-reprocess",
+      "dest": "/api/hotmart-reprocess.ts",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/tracking-pro.js",
+      "dest": "/tracking-pro.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

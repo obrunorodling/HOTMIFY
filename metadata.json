@@ -1,0 +1,6 @@
+{
+  "name": "Tracking Pro - Hotmart & Meta Ads",
+  "description": "Plataforma profissional e privada de rastreamento de marketing digital com integração oficial Hotmart Webhooks, Meta Marketing API, Meta CAPI e atribuição de vendas a cliques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
